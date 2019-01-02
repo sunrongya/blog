@@ -14,7 +14,7 @@ type Balancer interface {
 }
 ```
 
-#### 负载策略（随机及循环）
+#### 实现负载策略（随机及循环）
 随机 [random.go](https://github.com/go-kit/kit/blob/master/sd/lb/random.go)
 ```go
 type random struct {
