@@ -45,7 +45,7 @@ func Chain(outer Middleware, others ...Middleware) Middleware {
 }
 ```
 
-[go-kit](https://github.com/go-kit/kit) 通过抽象类型 Endpoint 把业务服务及中间件组合起来。抽象类型 Endpoint 定义为：接收上下文 (Context) 及请求参数 (request), 并做出响应 (response, err) 的一类抽象（学过函数式编程，如 Haskell, 特别是范畴论的同学对这里应该比较有亲切感）。
+[go-kit](https://github.com/go-kit/kit) 通过抽象类型 Endpoint 把业务服务及中间件组合起来。抽象类型 Endpoint 定义为：接收上下文 (Context) 及请求参数 (request), 并做出响应 (response, err) 的一类抽象。
 
 > 具体通过 Endpoint 抽象怎么组合后续会分析（希望没忘记）。
 
